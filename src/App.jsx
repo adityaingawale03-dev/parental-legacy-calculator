@@ -52,7 +52,7 @@ function App() {
           </div>
 
           <div className="mt-10">
-            <ParentChart />
+            <ParentChart data={calculation?.results} />
           </div>
 
         </div>

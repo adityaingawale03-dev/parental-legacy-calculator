@@ -27,21 +27,25 @@ function ResultTable({ data }) {
                 </td>
               </tr>
             ) : (
-              data.map((item) => (
+              data.map((item,index) => (
                 <tr
                   key={item.factor}
-                  className="border-t"
+                 className={`border-t transition-colors hover:bg-indigo-50 ${
+                    index % 2 === 0 ? "bg-white" : "bg-gray-50"
+                    }`}
                 >
                   <td className="p-3">{item.factor}</td>
-                  <td className="p-3 text-center">
-                    {item.mother}
-                  </td>
-                  <td className="p-3 text-center">
-                    {item.father}
-                  </td>
-                  <td className="p-3 text-center">
-                    {item.total}
-                  </td>
+                 <td className="p-3 text-center">
+                {item.mother.toFixed(3)}
+                </td>
+
+                <td className="p-3 text-center">
+                {item.father.toFixed(3)}
+                </td>
+
+                <td className="p-3 text-center">
+                {item.total.toFixed(3)}
+                </td>
                 </tr>
               ))
             )}
