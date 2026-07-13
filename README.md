@@ -1,16 +1,56 @@
-# React + Vite
+# 🧬 Parental Legacy Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that calculates parental legacy distribution based on the user's date of birth.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 📅 Date of Birth selection
+- 🧮 Automatic parental legacy calculation
+- 📊 Interactive comparison chart using Recharts
+- 📋 Responsive results table
+- 📈 Summary section
+- 💾 Local storage support
+- 📱 Fully responsive UI
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Tailwind CSS
+- Recharts
+- React Icons
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone <repository-url>
+
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Future Improvement
+
+If I had more time, I would improve the calculation algorithm so that values vary within the provided ranges based on the user's day of birth, instead of using fixed minimum/maximum values.
+
+## AI Usage
+
+AI was used to:
+- Understand the assignment requirements
+- Generate the initial project structure
+- Review and improve the UI
+- Explain React concepts and debugging during development
+
+All business logic, testing, and integration were verified and implemented by the developer.
+## Author
+
+Aditya Ingawale

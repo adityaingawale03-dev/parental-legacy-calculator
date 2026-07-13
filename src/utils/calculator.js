@@ -10,14 +10,19 @@ export const calculateLegacy = (dob) => {
   let fatherTotal = 0;
 
   const results = factors.map((factor) => {
+    const range = factor.max - factor.min;
+
+    // Calculate a value within the range based on the day (1–31)
+    const highValue = factor.min + ((day - 1) / 30) * range;
+
     let mother;
     let father;
 
     if (isOdd) {
-      mother = factor.max;
+      mother = highValue;
       father = factor.total - mother;
     } else {
-      father = factor.max;
+      father = highValue;
       mother = factor.total - father;
     }
 
