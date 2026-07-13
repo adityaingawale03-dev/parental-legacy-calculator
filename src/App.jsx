@@ -5,6 +5,7 @@ import ResultTable from "./components/ResultTable";
 import Summary from "./components/Summary";
 import ParentChart from "./components/ParentChart";
 import { calculateLegacy } from "./utils/calculator";
+import ExportCSV from "./components/ExportCSV";
 
 
 
@@ -65,6 +66,14 @@ useEffect(() => {
             fatherTotal={calculation?.fatherTotal}
             grandTotal={calculation?.grandTotal}
             dominantParent={calculation?.dominantParent}
+            />
+          </div>
+          <div className="mt-8 flex justify-end">
+            <ExportCSV
+              data={calculation?.results}
+              motherTotal={calculation?.motherTotal}
+              fatherTotal={calculation?.fatherTotal}
+              grandTotal={calculation?.grandTotal}
             />
           </div>
 
